@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/accounts/style.css' %}" type="text/css">
+    <title>Login</title>
+
+  </head>
+  <body>
+    <div class="container">
+        <h1>Welcome home to Kanso.</h1>
+        <h3> {{ user }} </h3><br>
+
+        <button class="btn btn-md" type="button" onclick="window.location.href='/account/profile/'" name="button">See profile</button>
+        <button class="btn btn-md" type="button" onclick="window.location.href='/account/logout/'">Log out</button>
+    </div>
+  </body>
+</html>
